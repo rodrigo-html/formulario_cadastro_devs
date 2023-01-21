@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <h1>Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <fieldset class="box">
+            <div class="campo">
+                <label for="nome" class="inputLabel">Nome:</label><br>
+                <input type="text" name="nome" id="nome" class="inputText" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome" class="inputLabel">Sobrenome:</label><br>
+                <input type="text" name="sobrenome" id="sobrenome" class="inputText" required>
+            </div>
+            <div class="campo">
+                <label for="email" class="inputLabel">E-mail:</label><br>
+                <input type="email" name="email" id="email" class="inputText" required>
+            </div>
+            <section>
+                <p>De qual lado da aplicação você desenvolve?</p>
+                <input type="radio" name="app" id="frontend">
+                <label for="frontend">Frontend</label><br>
+                <input type="radio" name="app" id="backend">
+                <label for="backend">Backend</label><br>
+                <input type="radio" name="app" id="fullstack">
+                <label for="fullstack">Fullstack</label><br>
+            </section>
+            <p id="sen">Senioridade</p>
+            <select name="senioridade" id="senioridade">
+                <option value="selecione" selected disabled>Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+            <br><br>
+            <p>Com quais tecnologias você tem familiaridade?</p>
+            <section id="tecs">
+                <div class="campo">
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="c" id="c">
+                    <label for="c">C#</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="python" id="python">
+                    <label for="python">Python</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="php" id="php">
+                    <label for="php">PHP</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="cc" id="cc">
+                    <label for="cc">C++</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" name="java" id="java">
+                    <label for="java">Java</label>
+                </div>
+            </section>
+            <p>Escreva um pouco sobre sua experiência como desenvolvedor</p>
+            <textarea name="texto" id="texto" rows="10"></textarea>
+            <input type="submit" class="botao">
+        </fieldset>
+    </form>
+</body>
+</html>
